@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import './component/individual/news.css'
+import './src/component/individual/News.css'
 const News = ({ data }) => {
     let { index } = useParams();
     return (

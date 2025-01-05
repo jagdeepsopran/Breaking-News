@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  height: 100%;
+}
+
+#logo{
+  width: 40px;
+  height: 40px;
+}
+
+#nav{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background: #12013e;
+  color: white;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  color: rgb(14, 14, 52);
+  border-radius: 20px;
+  height: 17rem;
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0 0 10px ;
+  padding: 10px;
+  background-color: #8d8d8e;
+}
+
+#content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  width: 80%;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#home-img {
+  border-radius: 15px;
+    height: 250px;
+    width: 40%;
+}
+#btn{
+  position: absolute;
+  bottom: 15px;
+  outline: none;
+  border: 2px solid white;
+  background-color: rgb(14, 14, 52);
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media screen and (max-width:500px) {
+  #nav{
+    justify-content: center;
+  }
+  #main {
+    flex-direction: column;
+    height: 60%;
+    width: 90%;
+    margin: 10px 0 0 0;
+  }
+  #content {
+    width: 100%;
+  }
+}
+@media screen and (max-width:900px) {
+  #main {
+    flex-direction: column;
+    width: 90%;
+    margin: 10px 0 0 0;
+  }
+  #content {
+    width: 100%;
+  }
+  #home-img{
+    height: 100%;
+    width: 50%;
+  }
+}
